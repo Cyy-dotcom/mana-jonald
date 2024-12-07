@@ -1,0 +1,99 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #7c7cff;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 20px;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8d60e8;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+  max-width: 900px;
+  margin: 20px 0;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Style */
+.project img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 5px solid #49a09d;
+  transition: transform 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.05);
+}
+
+/* Project Information */
+.project-info {
+  padding: 30px;
+  text-align: center;
+}
+
+.project-info h3 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.project-info p {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .project-info h3 {
+      font-size: 2rem;
+  }
+
+  .project-info p {
+      font-size: 1rem;
+  }
+
+  .portfolio-container {
+      padding: 20px;
+  }
+
+  .project {
+      width: 100%;
+  }
+}

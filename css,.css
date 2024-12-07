@@ -1,0 +1,95 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header Styles */
+h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 50px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Education Section */
+#education {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.education-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Individual Education Item */
+.education-item {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #49a09d;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h3 {
+    font-size: 2rem;
+    color: #49a09d;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.education-item h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    .education-container {
+        padding: 20px;
+    }
+
+    .education-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .education-item h4 {
+        font-size: 1.3rem;
+    }
+
+    .education-item p {
+        font-size: 1rem;
+    }
+}
